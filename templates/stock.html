@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ symbol }} Stock Analysis</title>
+</head>
+<body>
+    <h1>{{ symbol }} Stock Analysis</h1>
+    {{ plot|safe }}
+    <h2>{{ symbol }}</h2>
+    {{ plot | safe }}
+    <p>Predicted End-of-Day Price: {{ predicted_price }}</p>
+    <a href="/">Go Back</a>
+</body>
+</html>

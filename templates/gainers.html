@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Gainers</title>
+</head>
+<body>
+    <h1>Today's Top Gainers</h1>
+    {% for trade in trades_info %}
+        <h2>{{ trade.symbol }}</h2>
+        {{ trade.plot | safe }}
+        <p>Predicted End-of-Day Price: {{ trade.predicted_price }}</p>
+    {% endfor %}
+    <a href="/">Go Back</a>
+</body>
+</html>
